@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="just_a_div">
+        <p> 
+            Буквально простой "div". Хотя тут используется вложенный селектор, не такой уж и простой получается
+        </p>
+        <img src="JustAcAt.gif" class="image_radius">
+    </div>
+    <div class="section_in_div">
+        <p> Этот текст находится в div напрямую</p>
+            <section>
+                <p> А этот уже в section, он не дочерний для div</p>
+            </section>
+    </div>
+    <div class="selector_sequence">
+        <h3> 
+        Меняем только первый абзац за счёт h3 + p
+        </h3>
+        <p>
+        Он красненький и курсивом
+        </p>
+        <p>
+        А он нет :/
+        </p>
+    </div>
+    <div class="selector_sequence_all">
+        <h2> 
+    А теперь все будут жёлтенькие и жирненькие, за счёт свойства ~
+        </h2>
+        <p>
+        И он
+        </p>
+        <p>
+        И он
+        </p>
+    </div>
+    <div class="a_colors">
+        <p>Изменение свойства за счёт конкретного атрибута "page(n)"</p>
+        <li><a href="#/page1">Страница 1 у нас красная</a></li>
+        <li><a href="#/page2">Страница 2 у нас оранжевая</a></li>
+        <li><a href="#/page3">Страница 3 у нас жёлтая</a></li>
+        <li><a href="#/page4">Страница 4 у нас зелёная</a></li>
+        <li><a href="#/page5">А страница 5 у нас голубая</a></li>
+    </div>
+    <div class="parent">
+        Простейшая связь родительского
+        <p class="child">
+        и дочернего наследования
+        </p>
+    </div>
+    <div>
+        <h3>Наглядная демонстрация псевдокласса hover и псевдоэлемента after. Наведите пожалуйста курсор на кнопку :]</h3>
+        <button class="pseudo" data-hover="Имеет псевдокласс и псевдоэлемент">Эта кнопка...</button>
+    </div>
+    <div class="pseudo_not">
+        <h3>Демонстрация свойста :not</h3>
+        <p>
+        Он синий
+        </p>
+        <p>
+        Он синий
+        </p>
+        <p class="not">
+        А он не хочет :/
+        </p>
+    </div>
+    <div class="pseudoelement_pointer">
+        <h1>Используя псевдоэлементы</h1>
+        <h1>У меня есть здесь стрелочки</h1>
+        <h3>А вот это не h1</h3>
+        <h3>Тут нету</h3>
+    </div>
+    <div class="pseudoelement_star">
+        <h1>Тут тоже самое</h1>
+        <h1>Только звёздочка в конце</h1>
+        <h3>Только в h3</h3>
+        <h3>А не в h1</h3>
+    </div>
+</body>
+</html>
