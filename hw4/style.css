@@ -7,6 +7,9 @@
 li{
     list-style-type: none;
 }
+.test{
+    color: red;
+}
 div{
     width: 100%;
     display: inline-block;
