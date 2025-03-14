@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  .block-example {
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .second-block {
+    background-color: #ffe0b2;
+  }
+  
+  .inline-example {
+    background-color: #c8e6c9;
+    padding: 2px 5px;
+  }
+  
+  .display-block {
+    display: block;
+    background: #f8bbd0;
+    margin: 5px 0;
+  }
+  .display-inline {
+    display: inline;
+    background: #d1c4e9;
+    margin: 5px;
+    padding: 3px;
+  }
+  .display-inline-block {
+    display: inline-block;
+    background: #b2ebf2;
+    margin: 5px;
+    padding: 5px;
+  }
+  .display-flex {
+    display: flex;
+    background: #ffcdd2;
+    margin: 5px 0;
+    padding: 5px;
+    justify-content: center;
+  }
+  
+  .box-content-box {
+    width: 200px;
+    padding: 20px;
+    margin: 5px 0;
+    border: 2px solid #000;
+    box-sizing: content-box; 
+  }
+  .box-border-box {
+    width: 200px;
+    padding: 20px;
+    margin: 5px 0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
+  
+  .float-container {
+    margin-bottom: 20px;
+  }
+  .float-left {
+    float: left;
+    margin-right: 10px;
+  }
+  .float-right {
+    float: right;
+    margin-left: 10px;
+  }
+  .clear-example {
+    clear: both;
+    background: #c5cae9;
+    padding: 10px;
+  }
+  
+  .overflow-container {
+    width: 250px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 2px dashed #333;
+    padding: 5px;
+  }
+  .overflow-visible {
+    overflow: visible;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-auto {
+    overflow: auto;
+  }
+  
+  .pos-static {
+    background: #fff9c4;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .pos-relative {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    background: #ffe0b2;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .pos-absolute-container {
+    position: relative;
+    background: #dcedc8;
+    margin-bottom: 60px;
+    padding: 30px;
+  }
+  .pos-absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #fff176;
+    padding: 10px;
+  }
+  
+  .pos-fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ef9a9a;
+    padding: 10px;
+    width: 150px;
+    z-index: 999;
+  }
+
+  .pos-sticky-container {
+    margin-top: 200px;
+    background: #bbdefb;
+    padding: 10px;
+  }
+  .pos-sticky {
+    position: sticky;
+    top: 0;
+    background: #c8e6c9;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  img{
+    width: 200px;
+    height: auto;
+  }
+  
