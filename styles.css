@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif; /* Base font family */
-  color: #333; /* Base text color (dark gray) */
+  font-family: Arial, sans-serif;
+  color: #333;
   line-height: 1.6;
 }
 h1, h2 {
@@ -16,42 +16,40 @@ p {
   margin-bottom: 1em;
 }
 
-/* Container for central content with max width */
+/* Container for central content */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2em 0; /* Vertical padding between sections */
+  padding: 2em 0;
 }
 
-/* Header and navigation styles */
+/* Header and navigation */
 header {
-  background: #f2f2f2; /* Теперь тот же фон, что и в hero */
+  background: #f2f2f2; /* Same background as hero */
   padding: 1em 0;
 }
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: flex-start; /* Left align nav items */
+  justify-content: flex-start;
   align-items: center;
-  gap: 2em; /* Equal spacing between nav items */
+  gap: 2em;
 }
 .nav-menu li a {
   text-decoration: none;
-  color: #333; /* Default link color */
+  color: #333;
   font-weight: bold;
 }
-.nav-menu li a:hover {
-  color: #3498db; /* Hover state color (blue) */
-}
+.nav-menu li a:hover,
 .nav-menu li a.active {
-  color: #3498db; /* Active page link in blue */
+  color: #3498db;
 }
 
-/* Hero section styles */
+/* Hero section */
 .hero {
-  background: #f2f2f2; /* Light gray background for hero */
-  padding: 4em 0;     /* Make hero section taller */
+  background: #f2f2f2;
+  padding: 4em 0;
 }
 .hero h1 {
   font-size: 2.5em;
@@ -59,12 +57,12 @@ header {
 }
 .hero .subtitle {
   font-size: 1.2em;
-  color: #666; /* Subtitle in gray */
+  color: #666;
   margin: 0.5em 0 1em;
 }
 .hero .btn {
   display: inline-block;
-  background: #2c3e50; /* Цвет кнопки соответствует цвету секции stats */
+  background: #2c3e50; /* Button color matching stats section */
   color: #fff;
   text-decoration: none;
   padding: 0.75em 1.5em;
@@ -73,16 +71,15 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: background 0.3s;
 }
-
 .hero .btn:hover {
-  background: #1f2a38; /* Немного затемнённый оттенок для hover */
+  background: #1f2a38;
 }
 
-
-/* About Me section styles */
+/* About Me section with 6 icons */
 .about-me {
-  background: #fff; /* White background */
+  background: #fff;
   text-align: center;
+  padding: 2em 0;
 }
 .about-me h2 {
   font-size: 2em;
@@ -90,62 +87,77 @@ header {
 }
 .about-me p {
   max-width: 800px;
-  margin: 0 auto 1em auto; /* Center the paragraph text block */
+  margin: 0 auto 1em auto;
   line-height: 1.5;
 }
 
-/* Stats (projects) section styles */
+/* Projects Icons Grid inside About Me */
+.projects-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.project-icon {
+  flex: 1 1 150px;
+  text-align: center;
+}
+.project-icon .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5em;
+}
+.project-icon p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Stats Section (if needed) */
 .stats {
-  background: #2c3e50; /* Dark blue background for stats section */
-  color: #fff;         /* White text on dark background */
+  background: #2c3e50;
+  color: #fff;
+  padding: 2em 0;
 }
 .stats-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;    /* Wrap items to next line if needed */
-  text-align: center; /* Center-align text in each stat item */
+  flex-wrap: wrap;
+  text-align: center;
 }
 .stat-item {
-  flex: 1 1 150px;    /* Flexibly grow/shrink, base width 150px */
+  flex: 1 1 150px;
   margin: 1em 0;
 }
 .stat-item .icon {
   width: 50px;
   height: 50px;
   margin-bottom: 0.5em;
-  /* fill uses currentColor, so icon inherits text color (white) */
 }
 
-/* How I Work section styles */
-/* Секция How I Work */
+/* How I Work section */
 .how-i-work {
-  background: #e0e0e0; /* Серый фон, как в примере */
+  background: #e0e0e0;
   text-align: center;
   padding: 2em 0;
 }
-
+.how-i-work h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
 .how-i-work .subtitle {
   font-size: 1.1em;
   color: #333;
   margin-bottom: 1em;
 }
-
-/* Контейнер для «резинового» видео */
 .video-container {
   position: relative;
-  /* Соотношение 16:9 = 56.25% */
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
   height: 0;
-  
-  /* Устанавливаем максимальную ширину (1100px) */
   max-width: 1100px;
-  
-  /* Центрируем блок по горизонтали */
   margin: 0 auto;
 }
-
-/* iframe растягивается на всю ширину контейнера */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -154,56 +166,44 @@ header {
   height: 100%;
 }
 
-
-
-/* Footer styles */
+/* Footer */
 footer {
-  background: #2c3e50; /* Тёмно-синий фон */
-  color: #fff;         /* Белый цвет текста */
-  /* Убираем text-align: center, если хотим левое выравнивание */
-  /* text-align: center; */
-  padding: 1em 0;      /* Вертикальные отступы */
+  background: #2c3e50;
+  color: #fff;
+  padding: 1em 0;
 }
-
 .footer-content {
-  /* Этот класс внутри .container
-     Поэтому сам .container уже даёт нам max-width и margin: 0 auto. */
-  /* Если хотим выравнивать текст именно слева: */
   text-align: left;
-  /* Или, если нужно по центру, то: text-align: center; */
 }
-
 .footer-content p {
-  margin: 0.2em 0; /* Отступы между параграфами */
+  margin: 0.2em 0;
 }
 
-
-/* Responsive adjustments for mobile screens */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  /* Stack navigation vertically on smaller screens */
   .nav-menu {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .nav-menu li {
-      margin: 0.5em 0;
+    margin: 0.5em 0;
   }
-  /* Smaller font sizes in hero for mobile */
   .hero h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
   .hero .subtitle {
-      font-size: 1em;
+    font-size: 1em;
   }
-  /* Narrower About Me paragraph on mobile */
   .about-me p {
-      width: 90%;
+    width: 90%;
   }
-  /* Stack stats icons vertically on mobile */
+  .projects-icons {
+    gap: 1em;
+  }
   .stats-container {
-      flex-direction: column;
+    flex-direction: column;
   }
   .stat-item {
-      width: 100%; /* Each stat item takes full width */
+    width: 100%;
   }
 }
