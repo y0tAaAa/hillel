@@ -1,126 +1,194 @@
+/* Basic reset and base styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+}
+body {
+  font-family: Arial, sans-serif; /* Base font family */
+  color: #333; /* Base text color (dark gray) */
+  line-height: 1.6;
+}
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+p {
+  margin-bottom: 1em;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px;
-  color: #00346E;
-}
-
-.wrapper {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* Container for central content with max width */
 .container {
-  border: 3px solid yellow;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0; /* Vertical padding between sections */
+}
+
+/* Header and navigation styles */
+header {
+  background: #f2f2f2; /* Теперь тот же фон, что и в hero */
+  padding: 1em 0;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Left align nav items */
+  align-items: center;
+  gap: 2em; /* Equal spacing between nav items */
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #333; /* Default link color */
+  font-weight: bold;
+}
+.nav-menu li a:hover {
+  color: #3498db; /* Hover state color (blue) */
+}
+.nav-menu li a.active {
+  color: #3498db; /* Active page link in blue */
+}
+
+/* Hero section styles */
+.hero {
+  background: #f2f2f2; /* Light gray background for hero */
+  padding: 4em 0;     /* Make hero section taller */
+}
+.hero h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+.hero .subtitle {
+  font-size: 1.2em;
+  color: #666; /* Subtitle in gray */
+  margin: 0.5em 0 1em;
+}
+.hero .btn {
+  display: inline-block;
+  background: #2c3e50; /* Цвет кнопки соответствует цвету секции stats */
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #1f2a38; /* Немного затемнённый оттенок для hover */
+}
+
+
+/* About Me section styles */
+.about-me {
+  background: #fff; /* White background */
+  text-align: center;
+}
+.about-me h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.about-me p {
+  max-width: 800px;
+  margin: 0 auto 1em auto; /* Center the paragraph text block */
+  line-height: 1.5;
+}
+
+/* Stats (projects) section styles */
+.stats {
+  background: #2c3e50; /* Dark blue background for stats section */
+  color: #fff;         /* White text on dark background */
+}
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;    /* Wrap items to next line if needed */
+  text-align: center; /* Center-align text in each stat item */
+}
+.stat-item {
+  flex: 1 1 150px;    /* Flexibly grow/shrink, base width 150px */
+  margin: 1em 0;
+}
+.stat-item .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5em;
+  /* fill uses currentColor, so icon inherits text color (white) */
+}
+
+/* How I Work section styles */
+.how-i-work {
+  background: #e0e0e0; /* Gray background for How I Work section */
+  text-align: center;
+}
+.how-i-work h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.how-i-work .subtitle {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 1em;
+}
+.video-container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.video-container iframe,
+.video-container video {
   width: 100%;
-  height: 100px;
-  background-color: #FE482A;
-  margin-top: 20px;
-  clear: both;
+  height: auto; /* Make video/iframe responsive */
 }
 
-.left {
-  border: 1px solid yellow;
-  margin: 10px;
-  width: 175px;
-  height: 65px;
-  float: left;
-  background-color: #00346E;
+/* Footer styles */
+footer {
+  background: #2c3e50; /* Тёмно-синий фон */
+  color: #fff;         /* Белый цвет текста */
+  /* Убираем text-align: center, если хотим левое выравнивание */
+  /* text-align: center; */
+  padding: 1em 0;      /* Вертикальные отступы */
 }
 
-.right {
-  border: 1px solid yellow;
-  margin: 10px;
-  width: 175px;
-  height: 65px;
-  float: right;
-  background-color: #00346E;
+.footer-content {
+  /* Этот класс внутри .container
+     Поэтому сам .container уже даёт нам max-width и margin: 0 auto. */
+  /* Если хотим выравнивать текст именно слева: */
+  text-align: left;
+  /* Или, если нужно по центру, то: text-align: center; */
+}
+
+.footer-content p {
+  margin: 0.2em 0; /* Отступы между параграфами */
 }
 
 
-.block {
-  border: 3px solid yellow;
-  width: 100%;
-  height: 175px;
-  background-color: #FE482A;
-  clear: both;
-  margin-top: 20px;
-}
-
-.block-first {
-  float: right;
-  width: 390px;
-}
-
-.block-first__main {
-  width: 175px;
-  height: 150px;
-  margin: 10px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-  right: 50px;
-  float: left;
-}
-
-.block-first__top {
-  width: 175px;
-  height: 65px;
-  margin: 10px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-  float: right;
-}
-
-.block-first__bottom {
-  width: 175px;
-  height: 65px;
-  float: right;
-  margin: 10px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-}
-
-.block-second {
-  float: left;
-  width: 50%;
-}
-
-.block-second__right {
-  float: right;
-  width: 175px;
-  height: 150px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-  margin: 10px;
-}
-
-.block-third {
-  float: right;
-  width: 50%;
-}
-
-.block-third__top {
-  width: 175px;
-  height: 65px;
-  float: left;
-  margin: 10px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-
-}
-
-.block-third__bottom {
-  width: 175px;
-  height: 65px;
-  float: left;
-  margin: 10px;
-  background-color: #00346E;
-  border: 1px solid yellow;
-  clear: both;
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  /* Stack navigation vertically on smaller screens */
+  .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav-menu li {
+      margin: 0.5em 0;
+  }
+  /* Smaller font sizes in hero for mobile */
+  .hero h1 {
+      font-size: 2em;
+  }
+  .hero .subtitle {
+      font-size: 1em;
+  }
+  /* Narrower About Me paragraph on mobile */
+  .about-me p {
+      width: 90%;
+  }
+  /* Stack stats icons vertically on mobile */
+  .stats-container {
+      flex-direction: column;
+  }
+  .stat-item {
+      width: 100%; /* Each stat item takes full width */
+  }
 }
