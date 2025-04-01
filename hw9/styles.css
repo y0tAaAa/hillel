@@ -1,0 +1,117 @@
+/* 1. Сброс отступов и установка box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Базовые стили для тела страницы */
+body {
+  background-color: #f5f5f5;       /* Светло-серый фон для всей страницы */
+  font-family: Arial, sans-serif; /* Пример шрифта */
+  color: #333;                    /* Основной цвет текста */
+  line-height: 1.6;
+}
+
+/* 3. Контейнер для центрирования и ограничения ширины контента */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Горизонтальные отступы, чтобы текст не прилипал к краям экрана */
+  padding: 0 20px;
+}
+
+/* 4. Стили для шапки */
+header {
+  background-color: #ffffff;  /* Белый фон шапки */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер внутри header */
+.header-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+/* Меню навигации */
+header nav ul {
+  display: flex;
+  gap: 30px;           /* Расстояние между пунктами меню */
+  list-style: none;
+}
+
+/* Стили для пунктов меню */
+header nav ul li {
+  cursor: pointer; 
+  font-weight: 600;
+  color: #555;       /* Сероватый цвет текста */
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+/* Подсветка активного пункта (текущая страница) */
+header nav ul li.active {
+  color: #3f51b5;    /* Темно-синий (пример) */
+}
+
+/* Ховер-эффект для пунктов меню */
+header nav ul li:hover {
+  color: #3f51b5;
+}
+
+/* 5. "Герой"-блок (Hero Section) */
+.main_part {
+  padding: 80px 0;        /* Вертикальные отступы */
+}
+
+.main_part h1 {
+  font-size: 3rem;        /* Крупный размер заголовка */
+  margin-bottom: 1rem;    /* Отступ снизу */
+  font-weight: 700;
+}
+
+.main_part h5 {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;       /* Ограничение ширины текста */
+  margin-bottom: 2rem;    /* Отступ снизу */
+  color: #666;
+}
+
+/* Кнопка "WRITE TO ME" */
+.main_part button {
+  background-color: #3f51b5; /* Синий фон кнопки */
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main_part button:hover {
+  background-color: #2c3e9a; /* Темнее при наведении */
+}
+
+/* 6. Остальные блоки страницы (примерные отступы) */
+.about_me,
+.count_of_projects,
+.how_i_work {
+  padding: 40px 0;
+}
+
+/* 7. Подвал */
+footer {
+  background-color: #ffffff;    /* Совпадает с цветом header */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  color: #777;
+  margin: 5px 0;
+}
