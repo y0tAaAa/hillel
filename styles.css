@@ -118,8 +118,9 @@ header {
 }
 
 /* How I Work section styles */
+/* Секция How I Work */
 .how-i-work {
-  background: #e0e0e0; /* Серый фон */
+  background: #e0e0e0; /* Серый фон, как в примере */
   text-align: center;
   padding: 2em 0;
 }
@@ -130,21 +131,21 @@ header {
   margin-bottom: 1em;
 }
 
-/* Контейнер для адаптивного видео */
+/* Контейнер для «резинового» видео */
 .video-container {
-  /* Устанавливаем позиционирование и нижний отступ, равный 56.25% (16/9 = 1.777..., ~56.25%) */
   position: relative;
+  /* Соотношение 16:9 = 56.25% */
   padding-bottom: 56.25%;
   height: 0;
-  max-width: 800px;     /* Максимальная ширина видео (можно менять по вкусу) */
-  margin: 0 auto;       /* Центрируем контейнер по горизонтали */
-  /* Дополнительно можно добавить отступы сверху/снизу, если нужно:
-     margin-top: 2em;
-     margin-bottom: 2em;
-  */
+  
+  /* Устанавливаем максимальную ширину (1100px) */
+  max-width: 1100px;
+  
+  /* Центрируем блок по горизонтали */
+  margin: 0 auto;
 }
 
-/* iframe растягивается на всю ширину контейнера, сохраняя соотношение */
+/* iframe растягивается на всю ширину контейнера */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -152,6 +153,7 @@ header {
   width: 100%;
   height: 100%;
 }
+
 
 
 /* Footer styles */
