@@ -92,26 +92,28 @@ header {
 }
 
 /* Projects Icons Grid inside About Me */
+/* Блок со всеми иконками */
 .projects-icons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
+  flex-wrap: wrap;            /* Разрешаем перенос на новую строку */
+  justify-content: center;    /* Центрируем иконки по горизонтали */
+  gap: 2em;                   /* Расстояние между иконками */
   margin-top: 2em;
 }
+
+/* Каждая иконка с текстом */
 .project-icon {
-  flex: 1 1 150px;
+  flex: 0 0 150px;            /* Фиксированная ширина 150px */
   text-align: center;
 }
+
+/* Сама иконка (SVG) */
 .project-icon .icon {
   width: 50px;
   height: 50px;
   margin-bottom: 0.5em;
 }
-.project-icon p {
-  font-size: 1em;
-  color: #333;
-}
+
 
 /* Stats Section (if needed) */
 .stats {
