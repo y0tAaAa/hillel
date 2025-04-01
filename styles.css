@@ -119,27 +119,40 @@ header {
 
 /* How I Work section styles */
 .how-i-work {
-  background: #e0e0e0; /* Gray background for How I Work section */
+  background: #e0e0e0; /* Серый фон */
   text-align: center;
+  padding: 2em 0;
 }
-.how-i-work h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
+
 .how-i-work .subtitle {
   font-size: 1.1em;
   color: #333;
   margin-bottom: 1em;
 }
+
+/* Контейнер для адаптивного видео */
 .video-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* Устанавливаем позиционирование и нижний отступ, равный 56.25% (16/9 = 1.777..., ~56.25%) */
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 800px;     /* Максимальная ширина видео (можно менять по вкусу) */
+  margin: 0 auto;       /* Центрируем контейнер по горизонтали */
+  /* Дополнительно можно добавить отступы сверху/снизу, если нужно:
+     margin-top: 2em;
+     margin-bottom: 2em;
+  */
 }
-.video-container iframe,
-.video-container video {
+
+/* iframe растягивается на всю ширину контейнера, сохраняя соотношение */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto; /* Make video/iframe responsive */
+  height: 100%;
 }
+
 
 /* Footer styles */
 footer {
