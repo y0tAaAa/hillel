@@ -1,3 +1,4 @@
+/* Basic reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ p {
   margin-bottom: 1em;
 }
 
+/* Container for central content */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -22,6 +24,7 @@ p {
   padding: 2em 0;
 }
 
+/* Header and navigation */
 header {
   background: #f2f2f2;
   padding: 1em 0;
@@ -43,6 +46,7 @@ header {
   color: #34547a;
 }
 
+/* Hero section */
 .hero {
   background: #f2f2f2;
   padding: 4em 0;
@@ -71,10 +75,11 @@ header {
   background: #1f2a38;
 }
 
+/* About Me section */
 .about-me {
   background: #fff;
   text-align: center;
-  padding: 2em 0;
+  margin-top: 2em;
 }
 .about-me h2 {
   font-size: 2em;
@@ -86,9 +91,15 @@ header {
   line-height: 1.5;
 }
 
+/* Projects Stripe with 6 icons (blue background) */
 .projects-stripe {
   background: #34547a;
-  padding: 1em 0;
+  padding: 2em 0;
+  margin-bottom: 0; /* Убираем отступ снизу */
+}
+/* Переопределяем нижний паддинг контейнера внутри синей полосы */
+.projects-stripe .container {
+  padding-bottom: 0;
 }
 .projects-icons {
   display: grid;
@@ -109,32 +120,16 @@ header {
   color: #fff;
 }
 
-.stats {
-  background: #34547a;
-  color: #fff;
-  padding: 2em 0;
-}
-.stats-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.stat-item {
-  flex: 1 1 150px;
-  margin: 1em 0;
-}
-.stat-item .icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.5em;
-}
-
+/* How I Work section */
 .how-i-work {
   background: #e0e0e0;
   text-align: center;
   padding: 2em 0;
+  margin-top: 0; /* Убираем отступ сверху */
+}
+/* Переопределяем верхний паддинг контейнера внутри How I Work */
+.how-i-work .container {
+  padding-top: 0;
 }
 .how-i-work h2 {
   font-size: 2em;
@@ -147,12 +142,12 @@ header {
 }
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
   height: 0;
   max-width: 1100px;
   margin: 0 auto;
 }
-.video-container iframe {
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
@@ -160,6 +155,7 @@ header {
   height: 100%;
 }
 
+/* Footer */
 footer {
   background: #34547a;
   color: #fff;
@@ -172,6 +168,7 @@ footer {
   margin: 0.2em 0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
