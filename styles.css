@@ -1,4 +1,3 @@
-/* Basic reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ p {
   margin-bottom: 1em;
 }
 
-/* Container for central content */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -24,9 +22,8 @@ p {
   padding: 2em 0;
 }
 
-/* Header and navigation */
 header {
-  background: #f2f2f2; /* Same background as hero */
+  background: #f2f2f2;
   padding: 1em 0;
 }
 .nav-menu {
@@ -43,10 +40,9 @@ header {
 }
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  color: #3498db;
+  color: #34547a;
 }
 
-/* Hero section */
 .hero {
   background: #f2f2f2;
   padding: 4em 0;
@@ -62,7 +58,7 @@ header {
 }
 .hero .btn {
   display: inline-block;
-  background: #2c3e50; /* Button color matching stats section */
+  background: #34547a;
   color: #fff;
   text-decoration: none;
   padding: 0.75em 1.5em;
@@ -75,7 +71,6 @@ header {
   background: #1f2a38;
 }
 
-/* About Me section with 6 icons */
 .about-me {
   background: #fff;
   text-align: center;
@@ -91,19 +86,18 @@ header {
   line-height: 1.5;
 }
 
-/* Projects Icons Grid inside About Me */
-/* Блок со всеми иконками */
-/* Сетка для 6 иконок в ряд */
+.projects-stripe {
+  background: #34547a;
+  padding: 1em 0;
+}
 .projects-icons {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1em;            /* Расстояние между иконками */
-  margin-top: 2em;
+  gap: 1em;
 }
-
-/* Стили для каждого элемента иконки */
 .project-icon {
   text-align: center;
+  color: #fff;
 }
 .project-icon .icon {
   width: 50px;
@@ -112,13 +106,11 @@ header {
 }
 .project-icon p {
   font-size: 1em;
-  color: #333;
+  color: #fff;
 }
 
-
-/* Stats Section (if needed) */
 .stats {
-  background: #2c3e50;
+  background: #34547a;
   color: #fff;
   padding: 2em 0;
 }
@@ -139,7 +131,6 @@ header {
   margin-bottom: 0.5em;
 }
 
-/* How I Work section */
 .how-i-work {
   background: #e0e0e0;
   text-align: center;
@@ -156,7 +147,7 @@ header {
 }
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
   height: 0;
   max-width: 1100px;
   margin: 0 auto;
@@ -169,9 +160,8 @@ header {
   height: 100%;
 }
 
-/* Footer */
 footer {
-  background: #2c3e50;
+  background: #34547a;
   color: #fff;
   padding: 1em 0;
 }
@@ -182,7 +172,6 @@ footer {
   margin: 0.2em 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
@@ -201,7 +190,7 @@ footer {
     width: 90%;
   }
   .projects-icons {
-    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
   .stats-container {
     flex-direction: column;
