@@ -10,7 +10,7 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  font-family: Arial, sans-serif; /* Замените на нужный шрифт из Figma, если требуется */
+  font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -30,18 +30,17 @@
 ====================================================================== */
 .header {
   background: #f2f2f2;
-  /* Общий вертикальный отступ ~100px (50px сверху и 50px снизу) */
   padding: 50px 0;
 }
 .header__container {
   display: flex;
   align-items: center;
-  padding-left: 400px; /* Отступ от левого края 400px */
+  padding-left: 400px; 
 }
 .header__menu {
   list-style: none;
   display: flex;
-  gap: 100px; /* Расстояние между пунктами меню = 100px */
+  gap: 100px; 
   align-items: center;
 }
 .header__menu-link {
@@ -65,7 +64,7 @@
   align-items: center;
 }
 .hero__container {
-  padding-left: 400px; /* Отступ от левого края 400px */
+  padding-left: 400px;
   text-align: left;
 }
 .hero__title {
@@ -106,7 +105,7 @@
 .about__container {
   padding: 40px 0;
   text-align: center;
-  margin-bottom: 0; /* Чтобы синяя полоса примыкала */
+  margin-bottom: 0;
 }
 .about__title {
   font-size: 36px;
@@ -124,7 +123,7 @@
 .about__projects {
   background: #34547a;
   padding: 50px 0;
-  margin-top: auto; /* Прижимает синюю полосу к нижней части блока about */
+  margin-top: auto;
 }
 .projects__container {
   width: 100%;
@@ -139,13 +138,13 @@
 }
 .projects__item {
   display: flex;
-  align-items: center; /* Выравнивание по центру по вертикали */
-  gap: 10px;         /* Расстояние между иконкой и текстом */
+  align-items: center; 
+  gap: 10px;         
 }
 
 .projects__icon {
   display: block;
-  width: 60px;  /* Размер иконки, немного увеличен для макета 1920px */
+  width: 60px;  
   height: auto;
   margin: 0 auto 10px;
 }
@@ -171,7 +170,7 @@
 ====================================================================== */
 .how {
   background: #e0e0e0;
-  height: 1004px; /* Высота How I Work */
+  height: 1004px; 
   display: flex;
   align-items: center;
   text-align: center;
@@ -207,7 +206,7 @@
 .footer {
   background: #34547a;
   color: #fff;
-  height: 151px; /* Высота Footer */
+  height: 151px; 
   display: flex;
   align-items: center;
 }
