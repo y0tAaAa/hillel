@@ -29,12 +29,12 @@
 ====================================================================== */
 .header {
   background: #f2f2f2;
-  padding: 50px 0;
+  padding: 50px 0; /* 50px сверху и снизу */
 }
 .header__container {
   display: flex;
   align-items: center;
-  padding-left: 400px;
+  padding-left: 400px; /* Левый отступ 400px на десктопе */
 }
 .header__menu {
   list-style: none;
@@ -63,7 +63,7 @@
   align-items: center;
 }
 .hero__container {
-  padding-left: 400px;
+  padding-left: 400px; /* Левый отступ 400px на десктопе */
   text-align: left;
 }
 .hero__title {
@@ -125,7 +125,7 @@
 .about__projects {
   background: #34547a;
   padding: 50px 0;
-  margin-top: auto;
+  margin-top: auto; /* Прижимает синюю полосу к нижней части секции about */
 }
 .projects__container {
   width: 100%;
@@ -229,7 +229,6 @@
    Responsive (адаптивность)
 ====================================================================== */
 @media (max-width: 1200px) {
-  /* Для экранов меньше 1200px уменьшаем отступы */
   .header__container,
   .hero__container {
     padding-left: 40px;
@@ -262,6 +261,13 @@
     height: auto;
   }
   .footer {
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .about,
+  .how,
+  .hero {
     height: auto;
   }
 }
