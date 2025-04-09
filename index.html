@@ -1,135 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design and Layout - Vladyslav Deinerovych</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Grid Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page">
-  <!-- Header -->
-  <header class="header">
-    <div class="header__container container">
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link header__menu-link_active">HOME</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">ABOUT</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">WORKS</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">PROCESS</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">CONTACTS</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body>
+    <!-- Header with Two-Level Menu -->
+    <header class="header">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero hero_height-700">
-    <div class="hero__container container">
-      <h1 class="hero__title">Design and Layout</h1>
-      <p class="hero__subtitle">
-        Lorem Ipsum is a placeholder text commonly used in printing and web design.
-        Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
-      </p>
-      <a href="#contact" class="hero__btn">WRITE TO ME</a>
-    </div>
-  </section>
+    <!-- Main Content with Three Columns -->
+    <div class="container">
+        <!-- Left Column: Slider -->
+        <aside class="left-column">
+            <div class="slider">
+                <div class="slides">
+                    <img src="slide1.jpg" alt="Slide 1">
+                    <img src="slide2.jpg" alt="Slide 2">
+                    <img src="slide3.jpg" alt="Slide 3">
+                    <img src="slide4.jpg" alt="Slide 4">
+                </div>
+            </div>
+        </aside>
 
-  <!-- About Me Section -->
-  <section id="about-me" class="about about_height-600">
-    <div class="about__container container">
-      <h2 class="about__title">About Me</h2>
-      <p class="about__text">
-        Hello! I'm Vladyslav Deinerovych, a web designer and front-end developer with a passion for creating clean and efficient layouts.
-        I specialize in building responsive websites that combine aesthetic design with seamless functionality.
-      </p>
-    </div>
-    <!-- Blue stripe with 6 icons (входит в About Me) -->
-    <div class="about__projects projects-stripe">
-      <div class="projects__container container">
-        <ul class="projects__list">
-          <!-- Повторить 6 раз, иконка заменена на icons.jpg -->
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
+        <!-- Main Column: Accordion -->
+        <main class="main-column">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 1</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 1. You can add more details here.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 2</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 2. Expand to see more.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Section 3</button>
+                    <div class="accordion-content">
+                        <p>This is the content for section 3. Click to reveal.</p>
+                    </div>
+                </div>
             </div>
-          </li>
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
-            </div>
-          </li>
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
-            </div>
-          </li>
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
-            </div>
-          </li>
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
-            </div>
-          </li>
-          <li class="projects__item">
-            <img src="icons/icons.jpg" alt="Projects Icon" class="projects__icon">
-            <div class="projects__info">
-              <span class="projects__number">40+</span>
-              <span class="projects__label">Projects</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        </main>
 
-  <!-- How I Work Section -->
-  <section id="how-i-work" class="how how_height-1004">
-    <div class="how__container container">
-      <h2 class="how__title">How I Work</h2>
-      <p class="how__subtitle">My development process from concept to completion</p>
-      <div class="how__video-container">
-        <video controls width="1100" height="600">
-          <source src="videos/video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </section>
+        <!-- Right Column: Form -->
+        <aside class="right-column">
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-  <!-- Footer -->
-  <footer class="footer footer_height-151">
-    <div class="footer__container container">
-      <p class="footer__author">Vladyslav Deinerovych</p>
-      <p class="footer__rights">&copy; 2025. All rights reserved.</p>
-    </div>
-  </footer>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- JavaScript for Slider and Accordion -->
+    <script>
+        // Slider Functionality
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? 'block' : 'none';
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+        showSlides();
+        setInterval(showSlides, 3000);
+
+        // Accordion Functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
